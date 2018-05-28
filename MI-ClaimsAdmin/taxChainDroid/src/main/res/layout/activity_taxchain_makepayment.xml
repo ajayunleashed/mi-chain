@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            style="@style/titleBarText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="TaxChainDroid" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/makepayact_tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|left"
+                    android:padding="3.0dip"
+                    android:text="Customer Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/makepayact_tv_custname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3.0dip"
+                    android:textStyle="italic" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|left"
+                    android:padding="3.0dip"
+                    android:text="Amount Transferred"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/makepayact_tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3.0dip"
+                    android:textStyle="italic" />
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="3.0dip">
+
+
+
+            <Button
+                android:id="@+id/makepayact_btn_pay_cash"
+                style="@style/btnStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:gravity="center_horizontal"
+                android:onClick="onPay"
+                android:text="PAY" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
